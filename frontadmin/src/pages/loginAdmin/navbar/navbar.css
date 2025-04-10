@@ -1,0 +1,61 @@
+/* navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+ border-bottom: 1px solid  #fff;
+    padding: 6px 30px;
+    position: fixed;
+    color: white; 
+    width: 100%;
+    position: relative fixed;
+    z-index:999;
+    padding: 14px 0px;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 20px; /* Adjust as necessary */
+
+  color: #fff;
+  
+  border-radius: 1px;
+       border: none;
+       outline: none;
+    font-size: 24px; 
+    cursor: pointer;
+    z-index: 1000; /* Ensure it stays on top */
+  }
+
+
+.navbar-title {
+    font-size: 24px;
+    color: #ffffff; /* لون نص عناوين */
+    font-weight: bold;
+}
+
+.logout-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #ff4c4c; /* A vibrant red color */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right:20px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logout-button:hover {
+    background: #ff1a1a; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.logout-button:active {
+    background: #e60000; /* Even darker shade when clicked */
+    transform: translateY(0); /* Reset lift effect */
+}

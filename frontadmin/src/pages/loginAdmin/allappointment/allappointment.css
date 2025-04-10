@@ -1,0 +1,91 @@
+/* Container Styles */
+.appointments-container {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Page Title */
+  .appointments-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #343a40;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  /* Table Styles */
+  .appointments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .appointments-table th,
+  .appointments-table td {
+    padding: 12px;
+    text-align: left;
+    font-size: 1rem;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .appointments-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #007BFF;
+  }
+  
+  .appointment-row:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Handling row data */
+  .appointment-row td {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  /* Handling specific columns */
+  .appointment-row td:nth-child(1), /* User Name */
+  .appointment-row td:nth-child(7) { /* Doctor Name */
+    font-weight: bold;
+  }
+  
+  /* Age Formatting */
+  .appointment-row td:nth-child(2) {
+    color: #343a40;
+  }
+  
+  /* Amount Formatting */
+  .appointment-row td:nth-child(5) {
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  /* Cancelled Column */
+  .appointment-row td:nth-child(6) {
+    font-weight: bold;
+    color: #dc3545;
+  }
+  
+  /* No Data State */
+  .no-appointments {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #6c757d;
+    padding: 20px;
+  }
+  
+  /* Loading State */
+  .loading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #007BFF;
+    padding: 40px;
+  }
+  

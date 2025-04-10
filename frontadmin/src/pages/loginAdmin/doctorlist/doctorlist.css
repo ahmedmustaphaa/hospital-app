@@ -1,0 +1,123 @@
+/* تحسين عام للصفحة */
+.doctor-list-container {
+    text-align: center;
+    padding:60px 20px;
+    background: #f4f7fc;
+    min-height: 100vh;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #203a43;
+    margin-bottom: 20px;
+  }
+  
+  /* قائمة الأطباء */
+  .doctor-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    
+  }
+  
+  /* تصميم البطاقة */
+  .doctor-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+    position: relative;
+  }
+  
+  .doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* صورة الطبيب */
+  .doctor-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+    margin-bottom: 10px;
+  }
+  
+  /* النصوص */
+  .doctor-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .doctor-speciality {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .doctor-address {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* تقييم الطبيب */
+  .rating {
+    font-size: 16px;position: absolute;
+    top: 10px;
+    left:10px;
+    font-weight: bold;
+    color: #f39c12;
+    background: #fff3cd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  /* توفر الطبيب والخبرة */
+  .info-experience {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .availability {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #27ae60;
+  }
+  
+  .doctor-experience {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  /* تحسين تجربة المستخدم عند التحميل أو عند الخطأ */
+  .loading {
+    font-size: 18px;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .no-doctors {
+    font-size: 16px;
+    color: #e74c3c;
+    font-weight: bold;
+  }

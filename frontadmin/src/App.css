@@ -1,0 +1,41 @@
+body{
+  padding: 0%;
+  margin: 0%;
+  
+   
+}
+.admin-dashboard {
+    display: flex;
+    width: 100%;
+  
+ 
+    min-height: 100vh;
+}
+
+
+.sidebar {
+width: 18%;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: none;
+    outline: none;
+    z-index:999;
+    transition: all 0.7s ;
+    border-right: 5px solid rgb(225, 225, 225,0.2);
+   
+}
+.sidebar-collapsed{
+  display: none;
+width: 0;
+}
+
+.right-side{
+   min-height: 100vh;
+
+    background-color: #FAFBFF;
+    width: 100%; 
+    margin-left: 18%;
+
+}

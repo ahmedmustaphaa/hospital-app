@@ -1,0 +1,118 @@
+/* Background with a modern gradient */
+.adminLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1f4037, #99f2c8);
+}
+
+.login {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-container:hover {
+  transform: translateY(-5px);
+}
+
+h1 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+h1 span {
+  color: #ffcc29;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.role-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.role-toggle input {
+  display: none;
+}
+
+.role-toggle label {
+  background: #fff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.role-toggle label:hover {
+  background: #ffcc29;
+  color: #333;
+}
+
+.submitloginbtn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submitloginbtn:hover {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .login-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
